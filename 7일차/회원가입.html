@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/회원가입.css">
+    <title>Register</title>
+</head>
+<body>
+    <main>
+        <div class="regWrap">
+            <h1>회원가입</h1>
+            <form action="/register" method="post" id="regForm">
+                <p>회원정보를 입력해주세요</p>
+
+                <div class="regBox">
+                    <label for="id"><i class="fa-regular fa-envelope"></i></label>
+                    <input type="text" name="id" id="id" placeholder="아이디">
+                </div>
+                <div class="regBox">
+                    <label for="pwd"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" name="pwd" id="pwd" placeholder="비밀번호">
+                </div>
+                <div class="regBox">
+                    <label for="name"><i class="fa-regular fa-user"></i></label>
+                    <input type="text" name="name" id="name" placeholder="이름">
+                </div>
+                <div class="regBox">
+                    <label for="phone"><i class="fa-solid fa-mobile-screen-button"></i></label>
+                    <input type="text" name="phone" id="phone" placeholder="전화 번호">
+                </div>
+            </form>
+            <div class="regTerms">
+                <p>서비스 약관에 동의해주세요</p>
+                <form action="" class="checkbox">
+                    <input type="checkbox" id="allTerms">
+                    <label for="allTerms">모두 동의합니다.</label>
+
+                    <div class="termsBox">
+                        <div class="">
+                            <input type="checkbox" id="c1" class="termsCheck">
+                            <label for="c1">[필수] 만 14세 이상입니다</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" id="c2" class="termsCheck">
+                            <label for="c2">[필수] 이용약관 동의</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" id="c3" class="termsCheck">
+                            <label for="c3">[필수] 전자금융거래 이용약관 동의</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" id="c4" class="termsCheck">
+                            <label for="c4">[필수] 개인정보 수집 및 이용 동의</label>
+                        </div>
+                        <div class="">
+                            <input type="checkbox" id="c5" class="termsCheck">
+                            <label for="c5">[필수] 개인정보 제공 동의</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
